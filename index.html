@@ -1,1 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>UNIXGAME • Play Retro & Modern Games</title>
+  <meta name="description" content="UNIXGAME — Retro-flavored web gaming hub. Discover, play, and share indie and classic browser games." />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Orbitron:wght@600;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/"> 
+        <svg class="logo" width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+          <rect x="1.5" y="1.5" width="21" height="21" rx="4" stroke="currentColor" stroke-width="1.5" />
+          <path d="M7 16.5V7.5L12 10.5L17 7.5V16.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <span class="brand-text">UNIXGAME</span>
+      </a>
+
+      <nav class="nav" id="main-nav">
+        <a href="#games">Games</a>
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+        <a class="cta" href="#play">Play Now</a>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Play. Compete. Win — Retro vibes, modern polish.</h1>
+          <p class="lead">Discover curated indie and classic browser games. Fast, free, and optimized for every screen.</p>
+
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#games">Browse Games</a>
+            <a class="btn btn-outline" href="#about">Learn More</a>
+          </div>
+
+          <ul class="hero-stats">
+            <li><strong>120+</strong> Games</li>
+            <li><strong>12k+</strong> Players</li>
+            <li><strong>99.9%</strong> Uptime</li>
+          </ul>
+        </div>
+
+        <div class="hero-preview" aria-hidden>
+          <div class="device">
+            <div class="screen">
+              <div class="game-card featured">
+                <div class="top">Pixel Racer</div>
+                <div class="mid">Arcade • 90s</div>
+                <div class="bottom">Tap to play • Best score: <span>27,430</span></div>
+              </div>
+            </div>
+            <div class="glow"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="features container">
+      <h2>Why UNIXGAME?</h2>
+      <div class="feature-grid">
+        <article>
+          <h3>Fast & Lightweight</h3>
+          <p>Optimized for the browser — low latency, instant load times, and tiny footprints.</p>
+        </article>
+        <article>
+          <h3>Curated Selection</h3>
+          <p>Hand-picked indie gems and polished classics — quality over noise.</p>
+        </article>
+        <article>
+          <h3>Cross‑Device</h3>
+          <p>Play on desktop, tablet, or mobile with responsive controls and layouts.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="games" class="games container">
+      <div class="section-head">
+        <h2>Featured Games</h2>
+        <p>Jump into these popular picks — click a card to launch the demo.</p>
+      </div>
+
+      <div class="games-grid">
+        <article class="game-card" tabindex="0" data-game="Pixel Racer">
+          <div class="game-thumb">PR</div>
+          <div class="game-body">
+            <h4>Pixel Racer</h4>
+            <p class="meta">Arcade • 2D • Controller Support</p>
+            <div class="actions">
+              <button class="mini">Play</button>
+              <button class="mini outline">Details</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="game-card" tabindex="0" data-game="Nebula Run">
+          <div class="game-thumb">NR</div>
+          <div class="game-body">
+            <h4>Nebula Run</h4>
+            <p class="meta">Sci‑Fi • Endless Runner</p>
+            <div class="actions">
+              <button class="mini">Play</button>
+              <button class="mini outline">Details</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="game-card" tabindex="0" data-game="Dungeon Chef">
+          <div class="game-thumb">DC</div>
+          <div class="game-body">
+            <h4>Dungeon Chef</h4>
+            <p class="meta">Roguelike • Crafting</p>
+            <div class="actions">
+              <button class="mini">Play</button>
+              <button class="mini outline">Details</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="game-card" tabindex="0" data-game="Skyforge"> 
+          <div class="game-thumb">SF</div>
+          <div class="game-body">
+            <h4>Skyforge</h4>
+            <p class="meta">Flight • Competitive</p>
+            <div class="actions">
+              <button class="mini">Play</button>
+              <button class="mini outline">Details</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="about container">
+      <h2>About UNIXGAME</h2>
+      <p class="about-text">Built with love for players who grew up in the golden age of browser games. We focus on fast load times, accessible controls, and a chill community. No ads — just games.</p>
+
+      <form class="newsletter" id="newsletter">
+        <label for="email">Join the newsletter</label>
+        <div class="newsletter-row">
+          <input id="email" type="email" placeholder="you@domain.com" required>
+          <button class="btn" type="submit">Subscribe</button>
+        </div>
+        <p class="muted">We’ll only send game updates and occasional events.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="ft-left">© <span id="year"></span> UNIXGAME — Built by <a href="https://github.com/SharmaRohit23">SharmaRohit23</a></div>
+      <div class="ft-right">Made with ♥ for the web — <a href="#">Privacy</a> · <a href="#">Terms</a></div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>
 
